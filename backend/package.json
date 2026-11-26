@@ -17,5 +17,8 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
-}
+  },
+  "dev": "nodemon server.js",
+"start": "node server.js",
+"seed": "node seed.js 50000 --reset"
+} 

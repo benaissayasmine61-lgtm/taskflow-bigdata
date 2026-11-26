@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaskFlow · Pilotage académique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand-mark">TF</span>
+        <div>
+          <div class="brand-name">TaskFlow</div>
+          <div class="brand-sub">Pilotage académique</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <div class="nav-label">Espace administration</div>
+        <a href="#/tableau-de-bord" data-route data-icon="dashboard">Tableau de bord</a>
+        <a href="#/taches" data-route data-icon="tasks">Gestion des tâches</a>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="source" id="source"></div>
+        <div class="user">
+          <span class="avatar">AD</span>
+          <div>
+            <div class="user-name">Administration</div>
+            <div class="user-role">Faculté des sciences</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn" id="menuBtn" aria-label="Ouvrir le menu" data-icon="menu" data-size="18"></button>
+        <span class="brand-mark sm">TF</span>
+        <span class="brand-name">TaskFlow</span>
+      </header>
+      <main class="view" id="view"></main>
+    </div>
+  </div>
+
+  <div class="modal-root" id="modal" hidden>
+    <div class="modal" id="modalBox" role="dialog" aria-modal="true"></div>
+  </div>
+  <div class="tooltip" id="tooltip" role="tooltip"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
